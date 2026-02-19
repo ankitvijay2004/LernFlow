@@ -79,7 +79,7 @@ const DashboardPage = () => {
                                                 <span>Progress</span>
                                                 <span style={{ color: 'var(--text-main)' }}>{Math.round((completedLessons.length / course.lessons.length) * 100) || 0}%</span>
                                             </div>
-                                            <div style={{ background: 'rgba(255,255,255,0.05)', height: '10px', borderRadius: '5px', overflow: 'hidden' }}>
+                                            <div style={{ background: 'var(--glass-border)', height: '10px', borderRadius: '5px', overflow: 'hidden' }}>
                                                 <div style={{
                                                     background: 'linear-gradient(90deg, var(--primary), var(--secondary))',
                                                     height: '100%',

@@ -104,8 +104,8 @@ const CourseDetailsPage = () => {
 
                 {/* Enrollment Card */}
                 <div className="mobile-stack">
-                    <div className="glass" style={{ padding: '2.5rem', position: 'sticky', top: '8rem', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)' }}>
-                        <div style={{ height: '220px', borderRadius: '16px', overflow: 'hidden', background: 'linear-gradient(45deg, var(--bg), #1e293b)', marginBottom: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--glass-border)' }}>
+                    <div className="glass" style={{ padding: '2.5rem', position: 'sticky', top: '8rem', boxShadow: 'var(--shadow)' }}>
+                        <div style={{ height: '220px', borderRadius: '16px', overflow: 'hidden', background: 'var(--card-bg)', marginBottom: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--glass-border)' }}>
                             {course.thumbnail ? (
                                 <img src={course.thumbnail} alt={course.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             ) : (

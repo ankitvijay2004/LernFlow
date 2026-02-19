@@ -31,7 +31,7 @@ const HomePage = () => {
             </section>
 
             {/* Features Section */}
-            <section className="section-padding" style={{ background: 'rgba(255,255,255,0.01)', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
+            <section className="section-padding" style={{ background: 'transparent', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
                 <div className="container">
                     <div className="resp-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
                         <FeatureCard

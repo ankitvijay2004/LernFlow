@@ -46,7 +46,7 @@ const __dirname_root = path.resolve();
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname_root, 'frontend/dist')));
 
-    app.get('*', (req, res) =>
+    app.get('*path', (req, res) =>
         res.sendFile(path.resolve(__dirname_root, 'frontend', 'dist', 'index.html'))
     );
 } else {

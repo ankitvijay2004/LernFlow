@@ -31,3 +31,15 @@ In the **Environment** tab on Render, add the following variables:
 ## 6. Verification
 - Once the status is **Live**, click the URL provided by Render.
 - Your application should load, and the backend will serve the frontend automatically.
+## 7. Troubleshooting: "vite: Permission denied"
+If you see a `Permission denied` error, it's likely because your `node_modules` folder was accidentally pushed to GitHub from Windows. 
+
+### How to Fix:
+Run these commands in your local terminal to remove `node_modules` from Git tracking:
+```bash
+git rm -r --cached .
+git add .
+git commit -m "chore: remove node_modules and apply .gitignore"
+git push origin main
+```
+This will clear the "bad" files from GitHub without deleting them from your computer, allowing Render to do a fresh, clean install.

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "root-build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "clean-build": "rm -rf frontend/node_modules backend/node_modules node_modules && npm run root-build",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "framer-motion": "^12.34.2",
+    "lucide-react": "^0.575.0",
+    "react-router-dom": "^7.13.0"
+  }
+}
